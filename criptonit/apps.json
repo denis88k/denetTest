@@ -1,0 +1,22 @@
+[
+   {
+      "url": "https://app.uniswap.org/",
+      "src": "Uniswap.png",
+      "alt": "Uniswap"
+   },
+   {
+      "url": "https://app.1inch.io/",
+      "src": "1inch.png",
+      "alt": "1inch"
+   },
+   {
+      "url": "https://metamask.io/",
+      "src": "metamask.webp",
+      "alt": "metamask"
+   },
+   {
+      "url": "https://revert.finance/",
+      "src": "revert.png",
+      "alt": "revert"
+   }
+]

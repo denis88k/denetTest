@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1>Тестовое задание от Хабабутдинова Дениса <br> telegram: <a
+                    href="https://t.me/denis88k">https://t.me/denis88k</a> </h1>
+            <ol class="task__list">
+                <li class="task__item">
+                    <a href="#task-1">Подключение кошелька Metamask к сайту и отображение его адреса</a>
+                </li>
+                <li class="task__item solution">
+                    <a href="#task-2">Textarea блок, куда можно ввести текст и по кнопке получить sha256 от введенного
+                        текста</a>
+                </li>
+                <li class="task__item solution">
+                    <a href="#task-3">Док панель, со списком приложений/сайтов, по клику на которые открывается iframe
+                        на странице вашего приложения. (сайты https://app.uniswap.org/, https://app.1inch.io/,
+                        bugs.denet.pro, revert.finance) </a>
+                </li>
+                <li class="task__item solution">
+                    <a href="#task-4">Блок-утилита - textarea - вводимый текст шифруется алгоритмом aes по свободному
+                        или заданному ключу </a>
+                </li>
+                <li class="task__item solution">
+                    <a href="#task-5">Блок-утилита - textarea - вводимый текст расшифровывается aes по свободному или
+                        заданному ключу </a>
+                </li>
+                <li class="task__item solution">
+                    <a href="#task-6">Подгрузка списка приложений для док панели из .json файла (можете сделать его
+                        статичным в свободном формате)</a>
+                </li>
+                <li class="task__item ">
+                    <a href="#task-7">Отображение баланса в сети Polygon или сети Kovan. Тестовые Kovan ETH можете
+                        запросить у команды или на свободных кранах</a>
+                </li>
+                <li class="task__item ">
+                    <a href="#task-8">Отправка транзакции с подключенного кошелька основного токена</a>
+                </li>
+                <li class="task__item ">
+                    <a href="#task-9">Отправка транзакции с подключенного кошелька кастомного токена ERC20</a>
+                </li>
+            </ol>
+
+            <div class="solution__block">
+
+                <div class="solution-2" id="task-2">
+                    <b>
+                        <h3>Шифрование по SHA256</h3>
+                    </b>
+                    <textarea class="solution-input__sha solution-input"
+                        placeholder="Введи текст для шифрования по SHA256"></textarea>
+                    <button class="solution-btn solution-btn1">Шифровать</button>
+                    <p>Результат шифровки: <span class="result-2 solution-result"></span></p>
+                </div>
+
+                <div class="solution-3" id="task-3">
+                    <b>
+                        <h3>Док панель, со списком приложений/сайтов, по клику на которые открывается iframe на странице
+                            приложения</h3>
+                    </b>
+                    <div class="app-iframe">
+                        <button class="app-iframe-btn">
+                            Закрыть приложение &#9587;
+                        </button>
+                    </div>
+                    <ul class="apps"></ul>
+                </div>
+
+                <div class="solution-4" id="task-4">
+                    <b>
+                        <h3>Шифрование алгоритмом AES по свободному или заданному ключу</h3>
+                    </b>
+                    <textarea class="solution-input__aes-in solution-input"
+                        placeholder="Введи текст для шифрования по AES"></textarea>
+                    <textarea class="solution-input__aes-in-secret-word"
+                        placeholder="Введите секретную фразу, чтобы зашифровать по фразе"></textarea>
+                    <button class="solution-btn solution-btn2">Шифровать</button>
+                    <p>Результат шифровки: <span class="result-4 solution-result"></span></p>
+                </div>
+
+                <div class="solution-5" id="task-5">
+                    <b>
+                        <h3>Расшифровка AES текста по свободному или заданному ключу</h3>
+                    </b>
+                    <textarea class="solution-input__aes-out solution-input"
+                        placeholder="Введи зашифрованный текст по AES для расшифровки"></textarea>
+                    <textarea class="solution-input__aes-out-secret-word"
+                        placeholder="Введите секретную фразу, если она есть"></textarea>
+                    <button class="solution-btn solution-btn3">Расшифровать</button>
+                    <p>Результат расшифровки: <span class="result-5 solution-result"></span></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
